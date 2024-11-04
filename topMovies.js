@@ -83,7 +83,7 @@ function renderMovieCards(moviesResult) {
     const posterLink = document.createElement("a");
     posterLink.setAttribute(
       "href",
-      `/project-movies/movie-page.html?movieId=${moviesResult[i].id}`
+      `/movie-page.html?movieId=${moviesResult[i].id}`
     );
     const moviePoster = document.createElement("img");
     const moviePosterUrl =
@@ -99,7 +99,7 @@ function renderMovieCards(moviesResult) {
     const movieLink = document.createElement("a");
     movieLink.setAttribute(
       "href",
-      `/project-movies/movie-page.html?movieId=${moviesResult[i].id}`
+      `/movie-page.html?movieId=${moviesResult[i].id}`
     );
     movieLink.setAttribute("class", "card-title");
     const cardTitle = document.createElement("h5");
