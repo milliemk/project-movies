@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Movies</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="top-movies.html">Top Movies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/project-movies/assets/first-edited.jpg"
+            class="d-block w-100"
+            alt="Spooky Image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>The Spooky Season is Here!</h3>
+            <p>
+              It's that time of year when the eerie takes center stage. Ready
+              for some spine-tingling horror? From jump scares to slow-burn
+              suspense, here’s a list of top Halloween movies for your
+              watchlist!
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" id="second-item">
+          <img
+            src="/project-movies/assets/crow.jpg"
+            class="d-block w-100"
+            alt="The Crow Image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>The Crow</h4>
+            <p>
+              Soulmates Eric and Shelly are brutally murdered when the demons of
+              her dark past catch up with them. <span class="dots">...</span
+              ><span class="more">
+                Given the chance to save his true love by sacrificing himself,
+                Eric sets out to seek merciless revenge on their killers,
+                traversing the worlds of the living and the dead to put the
+                wrong things right.
+              </span>
+            </p>
+            <button
+              class="btn tinted-background readMoreBtn"
+              onclick="readButton('second-item')"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item" id="first-item">
+          <img
+            src="/project-movies/assets/beetlejuice-edited.jpg"
+            class="d-block w-100"
+            alt="Beetlejuice Beetlejuice Image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Beetlejuice Beetlejuice</h4>
+            <p>
+              After a family tragedy, three generations of the Deetz family
+              return home to Winter River. Still haunted by Betelgeuse,
+              <span class="dots">...</span
+              ><span class="more">
+                Lydia's life is turned upside down when her teenage daughter,
+                Astrid, accidentally opens the portal to the Afterlife.
+              </span>
+            </p>
+            <button
+              class="btn tinted-background readMoreBtn"
+              onclick="readButton('first-item')"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/project-movies/assets/plat.jpg"
+            class="d-block w-100"
+            alt="Platform 2 Image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Platform 2</h4>
+            <p>
+              After a mysterious leader imposes his law in a brutal system of
+              vertical cells, a new arrival battles against a dubious food
+              distribution method.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/project-movies/assets/azrael-new.jpg"
+            class="d-block w-100"
+            alt="The Bad Guys Image"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Azrael</h4>
+            <p>
+              In a world where no one speaks: A devout female hunts down a young
+              woman who has escaped her imprisonment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="data.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
