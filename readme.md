@@ -1,4 +1,4 @@
-# Movies App
+# Movies
 
 This website features a selection of popular, trending movies, offering brief summaries and details across various genres. It also includes a section for spooky and horror films, perfect for those in search of suspenseful experiences. The platform helps users discover the latest films, whether they're looking for something new or specific to a genre.
 
